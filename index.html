@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <title>Privacy Policy - Connext | Mozole Studio</title>
+  <style>
+    :root {
+      --bg: #F8F7F4;
+      --card-bg: #FFFFFF;
+      --text: #1E232A;
+      --text-muted: #5A6578;
+      --border: #E2DFD8;
+      --accent: #2563EB;
+      --accent-hover: #1D4ED8;
+      --badge-bg: #EFF6FF;
+      --badge-text: #1D4ED8;
+      --table-header: #F1EFEA;
+      --table-stripe: #FAF9F6;
+      --callout-bg: #F0FDF4;
+      --callout-border: #BBF7D0;
+      --callout-text: #166534;
+      --warning-bg: #FFFBEB;
+      --warning-border: #FDE68A;
+      --warning-text: #92400E;
+      --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121418;
+        --card-bg: #1B1E24;
+        --text: #E5E9F0;
+        --text-muted: #9BA5B4;
+        --border: #2D333F;
+        --accent: #60A5FA;
+        --accent-hover: #93C5FD;
+        --badge-bg: #1E293B;
+        --badge-text: #93C5FD;
+        --table-header: #242933;
+        --table-stripe: #1E222A;
+        --callout-bg: #064E3B22;
+        --callout-border: #065F46;
+        --callout-text: #6EE7B7;
+        --warning-bg: #78350F22;
+        --warning-border: #92400E;
+        --warning-text: #FDE68A;
+      }
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      line-height: 1.68;
+      margin: 0;
+      padding: 28px 16px;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      max-width: 820px;
+      width: 100%;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 36px 30px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 22px;
+      margin-bottom: 26px;
+    }
+    .badge-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      background: var(--badge-bg);
+      color: var(--badge-text);
+      border: 1px solid rgba(37, 99, 235, 0.2);
+    }
+    .badge.age-badge {
+      background: var(--warning-bg);
+      color: var(--warning-text);
+      border-color: var(--warning-border);
+    }
+    h1 {
+      margin: 0 0 10px 0;
+      font-size: 2rem;
+      letter-spacing: -0.025em;
+      font-weight: 700;
+    }
+    .effective-date {
+      color: var(--text-muted);
+      font-size: 0.88rem;
+    }
+    h2 {
+      font-size: 1.3rem;
+      margin-top: 34px;
+      margin-bottom: 14px;
+      color: var(--text);
+      border-left: 4px solid var(--accent);
+      padding-left: 12px;
+      letter-spacing: -0.01em;
+    }
+    h3 {
+      font-size: 1.05rem;
+      margin-top: 20px;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+    p, li {
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+    ul, ol {
+      padding-left: 22px;
+      margin-bottom: 16px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    a:hover {
+      color: var(--accent-hover);
+    }
+    .highlight-box {
+      background: var(--callout-bg);
+      border: 1px solid var(--callout-border);
+      color: var(--callout-text);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin: 20px 0;
+      font-size: 0.93rem;
+    }
+    .highlight-box strong {
+      color: var(--callout-text);
+    }
+    .warning-box {
+      background: var(--warning-bg);
+      border: 1px solid var(--warning-border);
+      color: var(--warning-text);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin: 20px 0;
+      font-size: 0.93rem;
+    }
+    .warning-box strong {
+      color: var(--warning-text);
+    }
+    .table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      text-align: left;
+    }
+    th, td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    th {
+      background: var(--table-header);
+      font-weight: 600;
+      color: var(--text);
+    }
+    tr:nth-child(even) td {
+      background: var(--table-stripe);
+    }
+    .lang-switch {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+    .lang-btn {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      padding: 7px 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.88rem;
+      color: var(--text);
+      transition: all 0.2s ease;
+    }
+    .lang-btn:hover {
+      border-color: var(--accent);
+    }
+    .lang-btn.active {
+      background: var(--accent);
+      color: #FFFFFF;
+      border-color: var(--accent);
+      box-shadow: 0 2px 6px rgba(37,99,235,0.25);
+    }
+    footer {
+      margin-top: 48px;
+      padding-top: 22px;
+      border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="lang-switch" role="tablist" aria-label="Language Selector">
+      <button class="lang-btn active" id="btn-en" onclick="switchLang('en')" role="tab" aria-selected="true" aria-controls="content-en">English</button>
+      <button class="lang-btn" id="btn-tr" onclick="switchLang('tr')" role="tab" aria-selected="false" aria-controls="content-tr">Türkçe</button>
+    </div>
+
+    <!-- ========================================== -->
+    <!--            ENGLISH VERSION                 -->
+    <!-- ========================================== -->
+    <main id="content-en" role="tabpanel" aria-labelledby="btn-en">
+      <header>
+        <div class="badge-container">
+          <span class="badge age-badge">Ages 13+ &bull; General Audience</span>
+          <span class="badge">GDPR &bull; KVKK &bull; Google Play 2026 Compliant</span>
+          <span class="badge">Offline-First Architecture</span>
+        </div>
+        <h1>Privacy Policy</h1>
+        <div class="effective-date">Last Updated &amp; Effective Date: October 10, 2026</div>
+      </header>
+
+      <div class="highlight-box">
+        <strong>Privacy-First Architecture:</strong> Connext operates on an <em>offline-first, zero-account</em> framework. Mozole Studio does not operate user account servers, does not solicit personal identities (names, emails, phone numbers), and stores your puzzle solutions, hints, and streaks exclusively within your device's local sandboxed storage.
+      </div>
+
+      <div class="warning-box">
+        <strong>Audience Notice (Google Play &amp; COPPA Classification):</strong> Connext is strictly intended for a <strong>General Audience aged 13 and older</strong> (or aged 16 and older within the European Economic Area / UK). Connext is <strong>not</strong> directed to children under 13, and is not enrolled in the Google Play Families Policy program. If you are under 13, please do not use this application.
+      </div>
+
+      <h2>1. Data Controller Identification (KVKK &amp; GDPR)</h2>
+      <p>
+        Pursuant to Article 10 of the Turkish Law on the Protection of Personal Data No. 6698 (KVKK), the Turkish Communiqu&eacute; on Principles and Procedures to be Followed in Fulfillment of the Obligation to Inform (Ayd&#305;nlatma Tebli&#287;i m. 5/1-a), and Article 4(7) of the EU General Data Protection Regulation (GDPR), the Data Controller is:
+      </p>
+      <ul>
+        <li><strong>Entity Name:</strong> Mozole Studio</li>
+        <li><strong>Registered Jurisdiction:</strong> Istanbul, Republic of Turkey</li>
+        <li><strong>Official Privacy &amp; Legal Inquiries Email:</strong> <a href="mailto:info@mozole.studio">info@mozole.studio</a></li>
+        <li><strong>Scope:</strong> Publisher and developer of the mobile game application "Connext".</li>
+      </ul>
+
+      <h2>2. Zero First-Party Personal Data Collection</h2>
+      <p>
+        Mozole Studio maintains no remote user databases, tracking beacons, or account backends. Specifically:
+      </p>
+      <ul>
+        <li><strong>No Account Creation:</strong> You play without creating an account, profile, username, or password.</li>
+        <li><strong>No Direct Identifiers:</strong> We do not collect, request, or store your legal name, physical address, email address, phone number, or government identification numbers.</li>
+        <li><strong>No Hardware Sensor Access:</strong> The App does not access your camera, microphone, device contacts, media gallery, biometric sensors, or precise GPS location sensors.</li>
+        <li><strong>Peer Challenges:</strong> Custom puzzle challenges and peer duels are encoded using compact, deterministic 48-bit algorithmic seeds. These codes are processed locally on-device without remote telemetry or server logging.</li>
+      </ul>
+
+      <h2>3. Locally Stored Terminal Equipment Data (ePrivacy Directive Art. 5(3))</h2>
+      <p>
+        Under Article 5(3) of the ePrivacy Directive (Directive 2002/58/EC as amended) and relevant national transpositions, storage of information on your terminal equipment is strictly restricted to <em>technically necessary</em> operations required to provide the core puzzle functionality explicitly requested by you:
+      </p>
+      <ul>
+        <li><strong>Gameplay Progression:</strong> Completed puzzle IDs, daily challenge solution streaks, and chronological solve records.</li>
+        <li><strong>Virtual Coin Ledger:</strong> In-game virtual Coin balances, hint unlock tokens, and solved category archives.</li>
+        <li><strong>User Preferences:</strong> Atelier audio settings (sound effects, lo-fi ambiance volume), haptic vibration toggle, and visual theme selection (Parchment, Obsidian Dark, Botanical, Terracotta).</li>
+        <li><strong>Local Backup Export/Import:</strong> Optional JSON backup data created only when you manually trigger an export and saved solely to a device file location designated by you.</li>
+      </ul>
+      <p>
+        All such data resides exclusively within client-side sandboxed local storage (HTML5 LocalStorage / IndexedDB). This data is never transmitted to Mozole Studio servers and is eradicated when you clear app data or uninstall the game.
+      </p>
+
+      <h2>4. Third-Party Advertising &amp; Google Play Data Safety Disclosure</h2>
+      <p>
+        To deliver free access to daily content, Connext integrates the <strong>Google AdMob SDK</strong> and the <strong>Google User Messaging Platform (UMP) SDK</strong>. Under Google Play Developer Program Policies, data collected by integrated third-party SDKs is legally attributed to the application.
+      </p>
+      <p>
+        Below is the exhaustive, 1-to-1 itemized mapping aligning with the <strong>Google Play Console Data Safety Form</strong>:
+      </p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Play Console Category</th>
+              <th>Data Types Collected by SDK</th>
+              <th>Processing Purpose</th>
+              <th>Shared / Processed By</th>
+              <th>Ephemeral / Retention</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Device or other IDs</strong></td>
+              <td>Google Advertising ID (GAID / AAID), App Set ID, Hardware identifier hashes.</td>
+              <td>Advertising, analytics, fraud prevention, frequency capping.</td>
+              <td>Google Ireland Ltd / Google LLC (Independent Data Controller).</td>
+              <td>Processed for ad session lifecycle; manageable/resettable via Android OS settings.</td>
+            </tr>
+            <tr>
+              <td><strong>Location</strong></td>
+              <td>Approximate location (derived from IP address at city/country level; NO precise GPS).</td>
+              <td>Geotargeted or localized advertising delivery, regulatory consent routing.</td>
+              <td>Google Ireland Ltd / Google LLC.</td>
+              <td>Processed ephemerally during active ad bid requests.</td>
+            </tr>
+            <tr>
+              <td><strong>App Info &amp; Performance</strong></td>
+              <td>Crash logs, diagnostic metrics, SDK load latency, battery/system resource telemetry.</td>
+              <td>Technical stability, crash diagnostics, ad mediation optimization.</td>
+              <td>Google Ireland Ltd / Google LLC.</td>
+              <td>Aggregated diagnostic retention by Google.</td>
+            </tr>
+            <tr>
+              <td><strong>App Activity &amp; Analytics</strong></td>
+              <td>Ad interaction telemetry (impressions, video completion, click-through, dismissal).</td>
+              <td>Rewarding in-game Coins upon video completion, fraud prevention, bot detection.</td>
+              <td>Google Ireland Ltd / Google LLC.</td>
+              <td>Logged per ad session for billing integrity and fraud verification.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Technical Safeguards &amp; Security Measures</h3>
+      <ul>
+        <li><strong>Encryption in Transit:</strong> All communications between the AdMob SDK and Google servers utilize transport layer encryption (HTTPS / TLS 1.2 or TLS 1.3).</li>
+        <li><strong>Independent Data Controller Status:</strong> For users in the European Economic Area (EEA), the UK, and Switzerland, <strong>Google Ireland Limited</strong> (Gordon House, Barrow Street, Dublin 4, Ireland) operates as an Independent Data Controller under Google's Controller-Controller Data Protection Terms. For users outside the EEA, <strong>Google LLC</strong> acts as Controller. Review Google's policies at: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> and <a href="https://business.safety.google/controllerterms/" target="_blank" rel="noopener">Google Controller Terms</a>.</li>
+        <li><strong>Consent Management (Google UMP):</strong> In jurisdictions requiring opt-in consent (EEA, UK, Switzerland under GDPR/ePrivacy), the Google UMP consent banner appears before non-contextual or personalized advertising requests execute. You can modify or revoke your consent preferences at any time via the in-app menu: <em>Atelier Settings &gt; Privacy Choices</em>.</li>
+      </ul>
+
+      <h2>5. Cross-Border International Data Transfers (KVKK m. 9 &amp; GDPR Chapter V)</h2>
+      <p>
+        Because Mozole Studio is based in Turkey and our third-party advertising partner (Google) operates globally distributed data center infrastructure, data collected via the Google AdMob SDK involves cross-border data transfers:
+      </p>
+      <ul>
+        <li><strong>Transfer under KVKK Article 9 (2024 Reform - Law No. 7499):</strong> In accordance with the amended Article 9 of the KVKK, technical ad telemetry, coarse location, and advertising identifiers (GAID) collected via Google AdMob are transferred to Google servers situated outside Turkey (predominantly within the European Union / Ireland and the United States of America). Such transfer is grounded upon:
+          <ol>
+            <li><strong>Explicit Consent (A&ccedil;&#305;k R&#305;za):</strong> Freely given, informed consent obtained through the interactive Google UMP CMP dialog prior to ad initialization; and</li>
+            <li><strong>Standard Contractual Clauses (Standart S&ouml;zle&#351;meler):</strong> Standard data protection clauses executed between data controllers in compliance with KVKK Authority guidelines.</li>
+          </ol>
+        </li>
+        <li><strong>Transfer under GDPR (Articles 44&ndash;49):</strong> Transfers of personal data from the EEA to Google LLC servers in the United States are governed by the <strong>EU-U.S. Data Privacy Framework (DPF)</strong> adequacy decision adopted by the European Commission, as Google LLC maintains active certification under the DPF.</li>
+      </ul>
+
+      <h2>6. Target Audience &amp; Strict Age Limitation (Google Play Families Policy Compliance)</h2>
+      <p>
+        Connext is developed, distributed, and marketed as a <strong>General Audience application for users aged 13 and older</strong>.
+      </p>
+      <ul>
+        <li><strong>Exclusion from Families Policy:</strong> The App is not designed for, targeted toward, or marketed to children under 13 years of age. Connext does not participate in Google Play's "Designed for Families" program.</li>
+        <li><strong>COPPA Compliance:</strong> In strict compliance with the United States Children's Online Privacy Protection Act (COPPA), we do not knowingly collect, maintain, or process personal data from children under the age of 13.</li>
+        <li><strong>Parental Inquiries:</strong> If a parent or legal guardian discovers that their child under 13 (or under 16 in the EEA) has accessed third-party ad services through the App without consent, please notify us at <a href="mailto:info@mozole.studio">info@mozole.studio</a> so we may facilitate the immediate purging of associated identifiers where feasible.</li>
+      </ul>
+
+      <h2>7. Device Permissions &amp; Technical Justification</h2>
+      <p>Connext requests only the minimum OS permissions necessary to operate:</p>
+      <ul>
+        <li><code>INTERNET</code> &amp; <code>ACCESS_NETWORK_STATE</code>: Required exclusively to communicate with Google AdMob servers to request and stream advertisements, and to evaluate network availability.</li>
+        <li><code>VIBRATE</code>: Required solely to trigger short tactile haptic feedback pulses when interacting with word tiles.</li>
+        <li><code>POST_NOTIFICATIONS</code> &amp; <code>RECEIVE_BOOT_COMPLETED</code>: Used solely to register an on-device local Android AlarmManager trigger for the 09:00 AM daily puzzle reminder. No remote push server connection, device token, or background tracking daemon is employed.</li>
+        <li><code>No Bluetooth / Location Permissions:</code> The App does not request <code>BLUETOOTH</code>, <code>ACCESS_FINE_LOCATION</code>, <code>READ_EXTERNAL_STORAGE</code>, or contact permissions.</li>
+      </ul>
+
+      <h2>8. Data Subject Rights (KVKK m. 11 &amp; GDPR Articles 12&ndash;22)</h2>
+      <p>
+        Under applicable data protection laws, you possess enforceable statutory rights:
+      </p>
+      <ul>
+        <li><strong>Rights under GDPR (EEA &amp; UK Residents):</strong> You have the right to request access, rectification, erasure ("right to be forgotten"), restriction of processing, data portability, and the right to object to automated processing or profiling. You also have the right to withdraw consent at any time without affecting the lawfulness of processing prior to withdrawal.</li>
+        <li><strong>Rights under KVKK Article 11 (Turkish Residents):</strong> You are entitled to learn whether your personal data is processed, request information regarding processing, learn the purpose and whether data is used in accordance with that purpose, know the third parties to whom data is transferred domestically or abroad, request rectification or erasure, and request notification of such operations to third-party recipients.</li>
+      </ul>
+      <h3>How to Exercise Your Rights:</h3>
+      <ol>
+        <li><strong>Wipe Local Game Data:</strong> Go to <em>Android Settings &gt; Apps &gt; Connext &gt; Storage &gt; Clear Data</em> to instantly eradicate all local progress, streaks, coins, and caches.</li>
+        <li><strong>Reset or Delete Advertising ID:</strong> Go to <em>Android Settings &gt; Google &gt; Ads &gt; Reset Advertising ID</em> or <em>Delete Advertising ID</em> to decouple device ad profiling.</li>
+        <li><strong>Update In-App Consent:</strong> Tap <em>Atelier Settings &gt; Privacy Choices</em> at any time to revise Google UMP consent preferences.</li>
+        <li><strong>Direct Legal Requests:</strong> For inquiries regarding controller obligations, email us at <a href="mailto:info@mozole.studio">info@mozole.studio</a>.</li>
+      </ol>
+      <p>
+        <strong>Right to Lodge a Complaint:</strong> You maintain the statutory right to file a formal complaint with a competent supervisory authority:
+      </p>
+      <ul>
+        <li>In Turkey: <strong>Ki&#351;isel Verileri Koruma Kurumu (KVKK)</strong> &mdash; <a href="https://www.kvkk.gov.tr" target="_blank" rel="noopener">www.kvkk.gov.tr</a></li>
+        <li>In the EEA: Your local national <strong>Data Protection Authority (DPA)</strong> pursuant to GDPR Article 77.</li>
+      </ol>
+
+      <h2>9. Amendments &amp; Contact</h2>
+      <p>
+        Mozole Studio reserves the right to revise this Privacy Policy to reflect evolving regulatory frameworks or application updates. Any modifications will be posted to this page with an updated effective date.
+      </p>
+      <p>
+        For inquiries or statutory requests:<br>
+        <strong>Data Controller:</strong> Mozole Studio<br>
+        <strong>Address:</strong> Istanbul, Republic of Turkey<br>
+        <strong>Email:</strong> <a href="mailto:info@mozole.studio">info@mozole.studio</a>
+      </p>
+    </main>
+
+    <!-- ========================================== -->
+    <!--            TURKISH VERSION                 -->
+    <!-- ========================================== -->
+    <main id="content-tr" style="display: none;" role="tabpanel" aria-labelledby="btn-tr">
+      <header>
+        <div class="badge-container">
+          <span class="badge age-badge">13+ Ya&#351; &bull; Genel Kitle</span>
+          <span class="badge">KVKK &bull; GDPR &bull; Google Play 2026 Uyumlu</span>
+          <span class="badge">&Ccedil;evrimd&#305;&#351;&#305; &Ouml;ncelikli Mimari</span>
+        </div>
+        <h1>Gizlilik Politikas&#305;</h1>
+        <div class="effective-date">Son G&uuml;ncelleme ve Y&uuml;r&uuml;rl&uuml;k Tarihi: 10 Ekim 2026</div>
+      </header>
+
+      <div class="highlight-box">
+        <strong>Gizlilik &Ouml;ncelikli Mimari:</strong> Connext, <em>&ccedil;evrimd&#305;&#351;&#305; &ouml;ncelikli (offline-first) ve s&#305;f&#305;r &uuml;yelik</em> ilkesiyle tasarlanm&#305;&#351;t&#305;r. Mozole Studio kullan&#305;c&#305; hesap sunucusu bar&#305;nd&#305;rmaz, kimlik bilgisi (ad, soyad, e-posta, telefon) talep etmez; bulmaca ilerlemeniz, ipucu bakiyeniz ve serileriniz yaln&#305;zca kendi cihaz&#305;n&#305;z&#305;n yerel yelkovan&#305;nda (Sandbox/LocalStorage) saklan&#305;r.
+      </div>
+
+      <div class="warning-box">
+        <strong>Hedef Kitle Bildirimi (Google Play ve &Ccedil;ocuk Politikas&#305;):</strong> Connext, m&uuml;nhas&#305;ran <strong>13 ya&#351; ve &uuml;zeri Genel Kitleye</strong> (Avrupa Ekonomik Alan&#305;'nda 16 ya&#351; ve &uuml;zeri) y&ouml;nelik geli&#351;tirilmi&#351;tir. Connext, 13 ya&#351;&#305;ndan k&uuml;&ccedil;&uuml;k &ccedil;ocuklara y&ouml;nelik de&#287;ildir ve Google Play Aile Program&#305;'na (Families Policy) dahil de&#287;ildir. 13 ya&#351;&#305;ndan k&uuml;&ccedil;&uuml;kseniz l&uuml;tfen bu uygulaman&#305; kullanmay&#305;n&#305;z.
+      </div>
+
+      <h2>1. Veri Sorumlusunun Kimli&#287;i (KVKK m. 10 ve Ayd&#305;nlatma Tebli&#287;i)</h2>
+      <p>
+        6698 say&#305;l&#305; Ki&#351;isel Verilerin Korunmas&#305; Kanunu (&ldquo;KVKK&rdquo;) m. 10 ile Ayd&#305;nlatma Y&uuml;k&uuml;ml&uuml;l&uuml;&#287;&uuml;n&uuml;n Yerine Getirilmesinde Uyulacak Usul ve Esaslar Hakk&#305;nda Tebli&#287; m. 5/1-a uyar&#305;nca, Veri Sorumlusu s&#305;fat&#305;na haiz kurulu&#351; bilgileri a&#351;a&#287;&#305;dad&#305;r:
+      </p>
+      <ul>
+        <li><strong>Ticari Unvan / Geli&#351;tirici:</strong> Mozole Studio</li>
+        <li><strong>Kayıtlı Adres / Yerle&#351;im Yeri:</strong> &#304;stanbul, T&uuml;rkiye Cumhuriyeti</li>
+        <li><strong>Resmi Tebligat ve Gizlilik E-posta Adresi:</strong> <a href="mailto:info@mozole.studio">info@mozole.studio</a></li>
+        <li><strong>Kapsam:</strong> "Connext" mobil oyun uygulamas&#305;n&#305;n geli&#351;tiricisi ve da&#287;&#305;t&#305;c&#305;s&#305;.</li>
+      </ul>
+
+      <h2>2. S&#305;f&#305;r Birinci Taraf Ki&#351;isel Veri Toplama</h2>
+      <p>
+        Mozole Studio, harici bir kullan&#305;c&#305; veritaban&#305;, bulut takip sistemi veya &uuml;yelik sunucusu i&#351;letmemektedir:
+      </p>
+      <ul>
+        <li><strong>Hesap A&ccedil;&#305;lmaz:</strong> Oyunu oynamak i&ccedil;in profil, kullan&#305;c&#305; ad&#305;, &#351;ifre veya hesap olu&#351;turulmaz.</li>
+        <li><strong>Do&#287;rudan Kimlik Bilgisi &#304;stenmez:</strong> Ad&#305;n&#305;z, soyad&#305;n&#305;z, T.C. kimlik numaran&#305;z, e-posta adresiniz, telefon numaran&#305;z toplanmaz veya saklanmaz.</li>
+        <li><strong>Donan&#305;m ve Sens&ouml;r Eri&#351;imi Yoktur:</strong> Kamera, mikrofon, rehber, medya galerisi, biyometrik sens&ouml;rler veya GPS konum sens&ouml;rlerine eri&#351;im izni talep edilmez.</li>
+        <li><strong>&Ccedil;evrimd&#305;&#351;&#305; D&uuml;ellolar:</strong> &Ouml;zel bulmaca ve kar&#351;&#305;l&#305;kl&#305; m&uuml;cadele kodlar&#305;, 48-bitlik algoritmik tohumlar (seed) &uuml;zerinden cihaz i&ccedil;inde deterministik olarak &ccedil;&ouml;z&uuml;l&uuml;r; uzak sunucu kayd&#305; veya telemetri &uuml;retmez.</li>
+      </ul>
+
+      <h2>3. Terminal Cihaz&#305;nda Yerel Olarak Saklanan Veriler (ePrivacy m. 5(3))</h2>
+      <p>
+        2002/58/AT say&#305;l&#305; eGizlilik Direktifi (ePrivacy) m. 5(3) ve elektronik haberle&#351;me mevzuat&#305; kapsam&#305;nda, kullan&#305;c&#305; cihaz&#305;nda veri saklanmas&#305; yaln&#305;zca kullan&#305;c&#305; taraf&#305;ndan a&ccedil;&#305;k&ccedil;a talep edilen temel oyun i&#351;levlerinin yerine getirilmesi i&ccedil;in <em>zorunlu teknik s&#305;n&#305;rlarla</em> s&#305;n&#305;rl&#305;d&#305;r:
+      </p>
+      <ul>
+        <li><strong>Oyun &#304;lerlemesi:</strong> Tamamlanan b&ouml;l&uuml;m kimlikleri, g&uuml;nl&uuml;k &ccedil;&ouml;z&uuml;m serileri (streaks) ve ge&ccedil;mi&#351; &ccedil;&ouml;z&uuml;m kay&#305;tlar&#305;.</li>
+        <li><strong>Sanal Jeton ve &#304;pucu Bakiyesi:</strong> Kazan&#305;lan sanal jeton (Coins) miktar&#305;, a&ccedil;&#305;lan kategori ipu&ccedil;lar&#305; ve ar&#351;iv b&ouml;l&uuml;m eri&#351;imleri.</li>
+        <li><strong>Aray&uuml;z Tercihleri:</strong> Atelier ses efektleri, arka plan lo-fi m&uuml;zik d&uuml;zeyleri, dokunsal titre&#351;im anahtar&#305; ve tema tercihleri (Par&#351;&ouml;men, Obsidyen Gece, Botanik, Terracotta).</li>
+        <li><strong>Yerel Yedekleme:</strong> Kullan&#305;c&#305;n&#305;n iste&#287;iyle d&#305;&#351;a aktar&#305;lan ve yaln&#305;zca kullan&#305;c&#305;n&#305;n se&ccedil;ti&#287;i konuma kaydedilen JSON yedek dosyas&#305;.</li>
+      </ul>
+      <p>
+        Bu veriler tamamen yerel depolama alan&#305;nda (LocalStorage / IndexedDB) tutulur, Mozole Studio sunucular&#305;na g&ouml;nderilmez ve uygulama verilerini temizledi&#287;inizde veya oyunu sildi&#287;inizde an&#305;nda yok edilir.
+      </p>
+
+      <h2>4. &Uuml;&ccedil;&uuml;nc&uuml; Taraf Reklam SDK'lar&#305; ve Google Play Veri G&uuml;venli&#287;i E&#351;le&#351;tirmesi</h2>
+      <p>
+        Connext'in &uuml;cretsiz sunulabilmesi ad&#305;na uygulamada <strong>Google AdMob SDK</strong> ve <strong>Google User Messaging Platform (UMP) SDK</strong> entegrasyonu bulunmaktad&#305;r. Google Play Geli&#351;tirici Politikalar&#305; uyar&#305;nca, &uuml;&ccedil;&uuml;nc&uuml; taraf SDK'lar&#305;n toplad&#305;&#287;&#305; veriler uygulama taraf&#305;ndan toplanm&#305;&#351; kabul edilir.
+      </p>
+      <p>
+        A&#351;a&#287;&#305;daki tablo, <strong>Google Play Console Veri G&uuml;venli&#287;i (Data Safety) Formu</strong> ile 1-e-1 do&#287;rudan e&#351;le&#351;en t&uuml;m veri kalemlerini a&ccedil;&#305;klamaktad&#305;r:
+      </p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Play Console Veri Kategorisi</th>
+              <th>SDK Taraf&#305;ndan Toplanan Veri T&uuml;r&uuml;</th>
+              <th>&#304;&#351;leme Amac&#305;</th>
+              <th>Payla&#351;&#305;lan / &#304;&#351;leyen Taraf</th>
+              <th>Ge&ccedil;ici &#304;&#351;leme / Saklama</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Cihaz veya Di&#287;er Kimlikler</strong></td>
+              <td>Google Reklam Kimli&#287;i (GAID / AAID), Uygulama K&uuml;mesi Kimli&#287;i (App Set ID).</td>
+              <td>Reklam sunumu, frekans s&#305;n&#305;rlama, sahtecilik &ouml;nleme.</td>
+              <td>Google Ireland Ltd / Google LLC (Ba&#287;&#305;ms&#305;z Veri Sorumlusu).</td>
+              <td>Reklam oturumu boyunca i&#351;lenir; Android ayarlar&#305;ndan s&#305;f&#305;rlanabilir.</td>
+            </tr>
+            <tr>
+              <td><strong>Konum Verisi</strong></td>
+              <td>Yakla&#351;&#305;k konum (IP adresinden t&uuml;retilen il/&uuml;lke d&uuml;zeyi; GPS KULLANILMAZ).</td>
+              <td>B&ouml;lgesel reklam g&ouml;sterimi ve mevzuata g&ouml;re izin y&ouml;netimi.</td>
+              <td>Google Ireland Ltd / Google LLC.</td>
+              <td>Reklam iste&#287;i an&#305;nda anl&#305;k (ephemeral) olarak i&#351;lenir.</td>
+            </tr>
+            <tr>
+              <td><strong>Uygulama Bilgileri ve Performans</strong></td>
+              <td>&Ccedil;&ouml;kme g&uuml;nl&uuml;kleri, SDK yan&#305;t s&uuml;resi, te&#351;his ve tan&#305; verileri.</td>
+              <td>Teknik kararl&#305;l&#305;k, performans ve hata analizi.</td>
+              <td>Google Ireland Ltd / Google LLC.</td>
+              <td>Google b&uuml;nyesinde k&uuml;melenmi&#351; olarak saklan&#305;r.</td>
+            </tr>
+            <tr>
+              <td><strong>Uygulama Etkinli&#287;i</strong></td>
+              <td>Reklam etkile&#351;imleri (g&ouml;r&uuml;nt&uuml;lenme, video tamamlama, t&#305;klama).</td>
+              <td>&Ouml;d&uuml;ll&uuml; reklam sonras&#305; jeton tan&#305;mlama, sahtecilik engelleme.</td>
+              <td>Google Ireland Ltd / Google LLC.</td>
+              <td>Faturaland&#305;rma ve denetim do&#287;rulamas&#305; s&uuml;resince saklan&#305;r.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>G&uuml;venlik &Ouml;nlemleri ve Ba&#287;&#305;ms&#305;z Veri Sorumlusu Stat&uuml;s&uuml;</h3>
+      <ul>
+        <li><strong>Aktar&#305;m G&uuml;venli&#287;i:</strong> AdMob SDK's&#305; ile Google sunucular&#305; aras&#305;ndaki t&uuml;m veri ak&#305;&#351;&#305; HTTPS (TLS 1.2 veya TLS 1.3) ile u&ccedil;tan uca &#351;ifrelenir.</li>
+        <li><strong>Ba&#287;&#305;ms&#305;z Veri Sorumlusu:</strong> Reklam verilerinin i&#351;lenmesi bak&#305;m&#305;ndan <strong>Google Ireland Limited</strong> (Avrupa i&ccedil;in) ve <strong>Google LLC</strong> (k&uuml;resel olarak) &ldquo;Ba&#287;&#305;ms&#305;z Veri Sorumlusu&rdquo; (Independent Controller) s&#305;fat&#305;yla hareket eder. Detaylar: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Gizlilik Politikas&#305;</a>.</li>
+        <li><strong>&#304;zin Y&ouml;netimi (UMP):</strong> Ki&#351;iselle&#351;tirilmi&#351; reklam tercihlerinizi ve a&ccedil;&#305;k r&#305;zan&#305;z&#305; diledi&#287;iniz an oyun i&ccedil;indeki <em>Atelier Ayarlar&#305; &gt; Gizlilik Tercihleri</em> men&uuml;s&uuml;nden de&#287;i&#351;tirebilir veya geri &ccedil;ekebilirsiniz.</li>
+      </ul>
+
+      <h2>5. Ki&#351;isel Verilerin Yurtd&#305;&#351;&#305;na Aktar&#305;lmas&#305; (KVKK m. 9 - 2024 Reformu)</h2>
+      <p>
+        Mozole Studio'nun merkezinin T&uuml;rkiye'de bulunmas&#305; ve AdMob altyap&#305;s&#305;n&#305;n k&uuml;resel sunucularda bar&#305;nd&#305;r&#305;lmas&#305; nedeniyle ki&#351;isel verilerin yurtd&#305;&#351;&#305;na aktar&#305;m&#305; s&ouml;z konusudur:
+      </p>
+      <ul>
+        <li><strong>KVKK Madde 9 Kapsam&#305;nda Aktar&#305;m:</strong> 7499 say&#305;l&#305; Kanun ile de&#287;i&#351;tirilen 6698 say&#305;l&#305; KVKK m. 9 uyar&#305;nca; Google AdMob taraf&#305;ndan toplanan teknik tan&#305;t&#305;c&#305;lar (GAID), yakla&#351;&#305;k IP konumu ve reklam telemetri verileri, T&uuml;rkiye d&#305;&#351;&#305;ndaki (ba&#351;ta AB/&#304;rlanda ve ABD) Google sunucular&#305;na aktar&#305;lmaktad&#305;r. Bu aktar&#305;m:
+          <ol>
+            <li>Oyun a&ccedil;&#305;l&#305;&#351;&#305;nda Google UMP izin y&ouml;netim ekran&#305; arac&#305;l&#305;&#287;&#305;yla &ouml;zg&uuml;r iradenizle beyan etti&#287;iniz <strong>A&ccedil;&#305;k R&#305;zan&#305;za</strong>; ve/veya</li>
+            <li>Google ile akdedilmi&#351; Veri Sorumlusundan Veri Sorumlusuna <strong>Standart S&ouml;zle&#351;me Maddelerine</strong> (KVKK Kurulu usul ve esaslar&#305; do&#287;rultusunda) dayanmaktad&#305;r.</li>
+          </ol>
+        </li>
+        <li><strong>GDPR Kapsam&#305;nda Aktar&#305;m:</strong> Avrupa Ekonomik Alan&#305; kullan&#305;c&#305;lar&#305; i&ccedil;in ABD'ye ger&ccedil;ekle&#351;en aktar&#305;mlarda, Avrupa Komisyonu'nun <strong>AB-ABD Veri Gizlili&#287;i &Ccedil;er&ccedil;evesi (DPF)</strong> yeterlilik karar&#305; esas al&#305;nmaktad&#305;r.</li>
+      </ul>
+
+      <h2>6. Hedef Kitle ve Ya&#351; S&#305;n&#305;r&#305; (Google Play Aile Politikas&#305; Tuza&#287;&#305;ndan Muafiyet)</h2>
+      <p>
+        Connext, m&uuml;nhas&#305;ran <strong>13 ya&#351; ve &uuml;zeri Genel Kitleye</strong> y&ouml;nelik haz&#305;rlanm&#305;&#351; bir kelime ve mant&#305;k oyunudur:
+      </p>
+      <ul>
+        <li><strong>Aile Politikas&#305; Harici Kapsam:</strong> Uygulama, 13 ya&#351;&#305;ndan k&uuml;&ccedil;&uuml;k &ccedil;ocuklar&#305; hedeflememekte olup Google Play "Aileler &#304;&ccedil;in Tasarland&#305;" (Designed for Families) program&#305; kapsam&#305;nda de&#287;ildir. Bu sayede reklam kimli&#287;i (GAID) kullan&#305;m&#305; mevzuata tam uygundur.</li>
+        <li><strong>&Ccedil;ocuk Verisi Toplanmaz:</strong> COPPA ve KVKK h&uuml;k&uuml;mleri do&#287;rultusunda, 13 ya&#351;&#305;n&#305; doldurmam&#305;&#351; &ccedil;ocuklara ait veriler bilerek toplanmaz, i&#351;lenmez ve saklanmaz.</li>
+        <li><strong>Ebeveyn Bildirimi:</strong> Bir ebeveynin, &ccedil;ocu&#287;unun izinsiz olarak &uuml;&ccedil;&uuml;nc&uuml; taraf reklam servislerine veri sa&#287;lad&#305;&#287;&#305;n&#305; tespit etmesi halinde <a href="mailto:info@mozole.studio">info@mozole.studio</a> &uuml;zerinden ileti&#351;ime ge&ccedil;ilmesi durumunda teknik tedbirler derhal al&#305;nacakt&#305;r.</li>
+      </ul>
+
+      <h2>7. Cihaz &#304;zinleri ve Teknik Gerek&ccedil;eler</h2>
+      <p>Connext yaln&#305;zca asgari d&uuml;zeyde teknik izin talep eder:</p>
+      <ul>
+        <li><code>INTERNET</code> ve <code>ACCESS_NETWORK_STATE</code>: Yaln&#305;zca AdMob reklam sunucular&#305;yla ileti&#351;im kurmak ve ba&#287;lant&#305; durumunu denetlemek i&ccedil;in kullan&#305;l&#305;r.</li>
+        <li><code>VIBRATE</code>: Bulmaca ta&#351;lar&#305; se&ccedil;ildi&#287;inde k&#305;sa dokunsal titre&#351;im (haptic) geri bildirimi sa&#287;lamak i&ccedil;in kullan&#305;l&#305;r.</li>
+        <li><code>POST_NOTIFICATIONS</code> ve <code>RECEIVE_BOOT_COMPLETED</code>: Yaln&#305;zca her sabah saat 09:00'da cihaz i&ccedil;inde &ccedil;evrimd&#305;&#351;&#305; g&uuml;nl&uuml;k bulmaca alarm&#305; kurmak i&ccedil;in kullan&#305;l&#305;r. Uzak bildirim sunucusu (Push Token) kullan&#305;lmaz.</li>
+        <li><code>Bluetooth ve Konum &#304;zni Yoktur:</code> Uygulama <code>BLUETOOTH</code>, a&ccedil;&#305;k konum veya dosya eri&#351;im izinlerini talep etmez.</li>
+      </ul>
+
+      <h2>8. &#304;lgili Ki&#351;inin Haklar&#305; (KVKK m. 11 ve GDPR m. 12-22)</h2>
+      <p>
+        6698 say&#305;l&#305; KVKK m. 11 ve ilgili mevzuat uyar&#305;nca her kullan&#305;c&#305; a&#351;a&#287;&#305;daki yasal haklara sahiptir:
+      </p>
+      <ul>
+        <li>Ki&#351;isel verilerinin i&#351;lenip i&#351;lenmedi&#287;ini &ouml;&#287;renme ve bilgi talep etme,</li>
+        <li>&#304;&#351;lenme amac&#305;n&#305; ve bunlar&#305;n amac&#305;na uygun kullan&#305;l&#305;p kullan&#305;lmad&#305;&#287;&#305;n&#305; &ouml;&#287;renme,</li>
+        <li>Yurti&ccedil;inde veya yurtd&#305;&#351;&#305;nda verilerin aktar&#305;ld&#305;&#287;&#305; &uuml;&ccedil;&uuml;nc&uuml; ki&#351;ileri bilme,</li>
+        <li>Eksik veya yanl&#305;&#351; i&#351;lenmi&#351; verilerin d&uuml;zeltilmesini ve silinmesini talep etme.</li>
+      </ul>
+      <h3>Haklar&#305;n Kullan&#305;lmas&#305; Y&ouml;ntemleri:</h3>
+      <ol>
+        <li><strong>Yerel Verileri Temizleme:</strong> <em>Android Ayarlar&#305; &gt; Uygulamalar &gt; Connext &gt; Depolama &gt; Verileri Temizle</em> ad&#305;m&#305;n&#305; izleyerek t&uuml;m ilerlemenizi derhal yok edebilirsiniz.</li>
+        <li><strong>Reklam Kimli&#287;ini S&#305;f&#305;rlama / Silme:</strong> <em>Android Ayarlar&#305; &gt; Google &gt; Reklamlar</em> b&ouml;l&uuml;m&uuml;nden Reklam Kimli&#287;inizi s&#305;f&#305;rlayabilir veya silebilirsiniz.</li>
+        <li><strong>Reklam Tercihlerini G&uuml;ncelleme:</strong> Oyun i&ccedil;indeki <em>Atelier Ayarlar&#305; &gt; Gizlilik Tercihleri</em> b&ouml;l&uuml;m&uuml;nden r&#305;zan&#305;z&#305; geri &ccedil;ekebilirsiniz.</li>
+        <li><strong>Yaz&#305;l&#305; Ba&#351;vuru:</strong> KVKK m. 11 kapsam&#305;ndaki ba&#351;vurular&#305;n&#305;z&#305; <a href="mailto:info@mozole.studio">info@mozole.studio</a> adresine iletebilirsiniz.</li>
+      </ol>
+      <p>
+        <strong>&#350;ikayet Hakk&#305;:</strong> Ba&#351;vurunuzun reddi veya yetersiz bulunmas&#305; halinde T&uuml;rkiye Cumhuriyeti <strong>Ki&#351;isel Verileri Koruma Kurulu'na (KVKK)</strong> (<a href="https://www.kvkk.gov.tr" target="_blank" rel="noopener">www.kvkk.gov.tr</a>) veya AB b&uuml;nyesindeki yetkili Veri Koruma Otoritesine &#351;ikayette bulunma hakk&#305;n&#305;z sakl&#305;d&#305;r.
+      </p>
+
+      <h2>9. De&#287;i&#351;iklikler ve &#304;leti&#351;im</h2>
+      <p>
+        Bu Gizlilik Politikas&#305;, mevzuat veya teknik s&uuml;re&ccedil; geli&#351;melerine paralel olarak g&uuml;ncellenebilir. De&#287;i&#351;iklikler bu sayfada ilan edildi&#287;i tarihte y&uuml;r&uuml;rl&uuml;&#287;e girer.
+      </p>
+      <p>
+        Yasal bildirimler i&ccedil;in:<br>
+        <strong>Veri Sorumlusu:</strong> Mozole Studio<br>
+        <strong>Adres:</strong> &#304;stanbul, T&uuml;rkiye<br>
+        <strong>E-posta:</strong> <a href="mailto:info@mozole.studio">info@mozole.studio</a>
+      </p>
+    </main>
+
+    <footer>
+      &copy; 2026 Connext &bull; Mozole Studio. All rights reserved. &bull; <a href="terms.html">Terms of Service / Kullan&#305;m &#350;artlar&#305;</a>
+    </footer>
+  </div>
+
+  <script>
+    function switchLang(lang) {
+      const isEn = lang === 'en';
+      document.getElementById('content-en').style.display = isEn ? 'block' : 'none';
+      document.getElementById('content-tr').style.display = isEn ? 'none' : 'block';
+      
+      const btnEn = document.getElementById('btn-en');
+      const btnTr = document.getElementById('btn-tr');
+      
+      btnEn.classList.toggle('active', isEn);
+      btnEn.setAttribute('aria-selected', isEn ? 'true' : 'false');
+      
+      btnTr.classList.toggle('active', !isEn);
+      btnTr.setAttribute('aria-selected', !isEn ? 'true' : 'false');
+    }
+  </script>
+</body>
+</html>
